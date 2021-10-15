@@ -57,7 +57,7 @@ multi_btn = Button(root, text='*', height=2, width=8, bg='orange',  command =lam
 div_btn = Button(root, text='/', height=2, width=8, bg='yellow',  command =lambda:press("/"))
 plus_btn = Button(root, text='+', height=2, width=8, bg='#32A8A8',  command =lambda:press("+"))
 minus_btn = Button(root, text='-', height=2, width=8, bg='#5332a8',  command =lambda:press('-'))
-equals_btn = Button(root, text='=', height=2, width=8, bg='#5332a8',  command =lambda:press('='))
+equals_btn = Button(root, text='=', height=2, width=8, bg='#5332a8',  command =equal)
 
 multi_btn.grid(column=3, row=1)
 div_btn.grid(column=3, row=2)
