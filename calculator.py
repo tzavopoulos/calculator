@@ -24,7 +24,7 @@ def equal():
     result = str(eval(result))
     equation.set(result)
 
-res_txt = Entry(root,text=equation)
+res_txt = Entry(root,text=equation,width=40)
 res_txt.grid(column=0, row=0, columnspan=4)
 
 
