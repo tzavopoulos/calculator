@@ -2,12 +2,18 @@ from tkinter import *
 
 your_mum = Tk()
 your_mum.title('Recap')
-your_mum.geometry('300x300')
+your_mum.geometry('272x225')
 your_mum.resizable(False, False)
-your_mum.configure(bg='darkgrey')
+your_mum.configure(bg='black')
 
 equation = StringVar()
 result = ""
+
+correct = PhotoImage(master=your_mum, file="ssss.png")
+
+
+
+
 
 def clear():
     global result
@@ -21,8 +27,21 @@ def press(num):
 
 def equal():
     global result
+    global result
+    global correct
     result = str(eval(result))
     equation.set(result)
+
+
+    if res_txt.get() == '6969':
+        global correct
+        your_mum.forget
+        your_mum.geometry('460x460')
+        lbl = Label(your_mum, image=correct)
+        lbl.grid(column=0, row=0)
+
+
+
 
 res_txt = Entry(your_mum,text=equation,width=40)
 res_txt.grid(column=0, row=0, columnspan=4)
